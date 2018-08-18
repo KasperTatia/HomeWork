@@ -62,7 +62,7 @@ public class Book {
 
 	public String getName() {
 		if (name == null)
-			System.out.println("Ââåäèòå èìÿ");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ");
 		return name;
 	}
 
@@ -72,7 +72,7 @@ public class Book {
 
 	public String getAuthors() {
 		if (authors == null)
-			System.out.println("Ââåäèòå àâòîðà");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ð²Ñ‚Ð¾Ñ€Ð°");
 		return authors;
 	}
 
@@ -91,7 +91,7 @@ public class Book {
 
 	public String getPress() {
 		if (press == null)
-			System.out.println("Ââåäèòå èçäàòåëüñòâî");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾");
 		return press;
 	}
 
@@ -101,7 +101,7 @@ public class Book {
 
 	public int getYear() {
 		if (year == 0)
-			System.out.println("Ââåäèòå ãîä");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð¾Ð´");
 		return year;
 	}
 
@@ -109,12 +109,12 @@ public class Book {
 		if (year >= FIRSTBOOKYEAR && year <= CURRENTYEAR)
 			this.year = year;
 		else
-			System.out.println("Íåâåðíûé ãîä!");
+			System.out.println("ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð³Ð¾Ð´!");
 	}
 
 	public int getPages() {
 		if (pages == 0)
-			System.out.println("Ââåäèòå êîëè÷åñòâî ñòðàíèö");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†");
 		return pages;
 	}
 
@@ -125,7 +125,7 @@ public class Book {
 
 	public double getPrice() {
 		if (price == 0)
-			System.out.println("Ââåäèòå öåíó");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ½Ñƒ");
 		return price;
 	}
 
@@ -136,7 +136,7 @@ public class Book {
 
 	public String getCover() {
 		if (cover == null)
-			System.out.println("ÂÛâåäèòå òèï îáëîæêè");
+			System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚Ð¸Ð¿ Ð¾Ð±Ð»Ð¾Ð¶ÐºÐ¸");
 		return cover;
 	}
 
@@ -156,3 +156,4 @@ public class Book {
 		return sb.toString();
 	}
 }
+

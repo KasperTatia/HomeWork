@@ -4,25 +4,25 @@ public class BooksDemo {
 
 	public static void main(String[] args) {
 		
-		final String DEMOAUTHOR = "Бронте Э.";
-		final String DEMOPRESS = "Книжный Клуб «Клуб Семейного Досуга»";
-		final int DEMOYEAR = 2017;
+		final String DEMOAUTHOR = "Р”Р°РЅРёРµР»СЊ Р”РµС„Рѕ";
+		final String DEMOPRESS = "РљРЅРёР¶РЅС‹Р№ РљР»СѓР± В«РљР»СѓР± РЎРµРјРµР№РЅРѕРіРѕ Р”РѕСЃСѓРіР°В»";
+		final int DEMOYEAR = 2015;
 
 		Book b = new Book();
-		b.setName("Мертвые души");
-		b.setAuthors("Николай Гоголь");
-		b.setCover("Мягкая");
+		b.setName("РњРµСЂС‚РІС‹Рµ РґСѓС€Рё");
+		b.setAuthors("РќРёРєРѕР»Р°Р№ Р“РѕРіРѕР»СЊ");
+		b.setCover("РњСЏРіРєР°СЏ");
 		b.setPages(352);
-		b.setPress("Книжный Клуб «Клуб Семейного Досуга»");
+		b.setPress("РљРЅРёР¶РЅС‹Р№ РљР»СѓР± В«РљР»СѓР± РЎРµРјРµР№РЅРѕРіРѕ Р”РѕСЃСѓРіР°В»");
 		b.setPrice(3.55);
 		b.setYear(2016);
 		
-		Book b1 = new Book("Мастер и Маргарита", "Булгаков М.", "Фолио", 2017, 416, 5.44, "Твердая");
-		Book b2 = new Book("Грозовой Перевал", "Бронте Э.", "Книжный Клуб «Клуб Семейного Досуга»", 2017, 416, 10.59, "Твердая ");
-		Book b3 = new Book("Вокруг света в восемьдесят дней", "Жюль Габриэль Верн", "Азбука", 2016, 352, 4.19, "Твердая");
-		Book b4 = new Book("Робинзон Крузо", "Даниель Дефо", "Азбука", 2018, 352, 3.15, "Твердая");
-		Book b5 = new Book("Дон Кихот", "Мигель де Сервантес", "Азбука", 2018, 608, 8.75, "Твердая");
-		Book b6 = new Book("Декамерон", "Боккаччо Дж.", "Фолио", 2017, 672, 11.0, "Твердая");
+		Book b1 = new Book("РњР°СЃС‚РµСЂ Рё РњР°СЂРіР°СЂРёС‚Р°", "Р‘СѓР»РіР°РєРѕРІ Рњ.", "Р¤РѕР»РёРѕ", 2017, 416, 5.44, "РўРІРµСЂРґР°СЏ");
+		Book b2 = new Book("Р“СЂРѕР·РѕРІРѕР№ РџРµСЂРµРІР°Р»", "Р‘СЂРѕРЅС‚Рµ Р­.", "РљРЅРёР¶РЅС‹Р№ РљР»СѓР± В«РљР»СѓР± РЎРµРјРµР№РЅРѕРіРѕ Р”РѕСЃСѓРіР°В»", 2017, 416, 10.59, "РўРІРµСЂРґР°СЏ ");
+		Book b3 = new Book("Р’РѕРєСЂСѓРі СЃРІРµС‚Р° РІ РІРѕСЃРµРјСЊРґРµСЃСЏС‚ РґРЅРµР№", "Р–СЋР»СЊ Р“Р°Р±СЂРёСЌР»СЊ Р’РµСЂРЅ", "РђР·Р±СѓРєР°", 2016, 352, 4.19, "РўРІРµСЂРґР°СЏ");
+		Book b4 = new Book("Р РѕР±РёРЅР·РѕРЅ РљСЂСѓР·Рѕ", "Р”Р°РЅРёРµР»СЊ Р”РµС„Рѕ", "РђР·Р±СѓРєР°", 2018, 352, 3.15, "РўРІРµСЂРґР°СЏ");
+		Book b5 = new Book("Р”РѕРЅ РљРёС…РѕС‚", "РњРёРіРµР»СЊ РґРµ РЎРµСЂРІР°РЅС‚РµСЃ", "РђР·Р±СѓРєР°", 2018, 608, 8.75, "РўРІРµСЂРґР°СЏ");
+		Book b6 = new Book("Р”РµРєР°РјРµСЂРѕРЅ", "Р‘РѕРєРєР°С‡С‡Рѕ Р”Р¶.", "Р¤РѕР»РёРѕ", 2017, 672, 11.0, "РўРІРµСЂРґР°СЏ");
 		Book[] allBooks = { b, b1, b2, b3, b4, b5, b6 };
 		System.out.println("Books:\n");
 
@@ -30,28 +30,28 @@ public class BooksDemo {
 			System.out.println(allBooks[i].toString());
 			System.out.println();
 		}
-		System.out.println("=============================================");
+		System.out.println("______________________________________________");
 		BookArrayCreator bac = new BookArrayCreator();
 		Book[] sortByAuthor = bac.byAuthor(DEMOAUTHOR, allBooks);
-		System.out.println("Сортировать по авторам " + DEMOAUTHOR + ":\n");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ Р°РІС‚РѕСЂР°Рј " + DEMOAUTHOR + ":\n");
 		for (int i = 0; i < sortByAuthor.length; i++) {
 			System.out.println("Book #" + (i + 1) + ":");
 			System.out.println(sortByAuthor[i].toString());
 			;
 			System.out.println();
 		}
-		System.out.println("=============================================");
+		System.out.println("_______________________________________________");
 		Book[] sortByPress = bac.byPress(DEMOPRESS, allBooks);
-		System.out.println("Сортировать по издательству " + DEMOPRESS + ":\n");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ РёР·РґР°С‚РµР»СЊСЃС‚РІСѓ " + DEMOPRESS + ":\n");
 		for (int i = 0; i < sortByPress.length; i++) {
 			System.out.println("Book #" + (i + 1) + ":");
 			System.out.println(sortByPress[i].toString());
 			;
 			System.out.println();
 		}
-		System.out.println("=============================================");
+		System.out.println("________________________________________________");
 		Book[] sortByYear = bac.byYear(DEMOYEAR, allBooks);
-		System.out.println("Сортировать по году публикации " + DEMOYEAR + ":\n");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ РіРѕРґСѓ РїСѓР±Р»РёРєР°С†РёРё " + DEMOYEAR + ":\n");
 		for (int i = 0; i < sortByYear.length; i++) {
 			System.out.println("Book #" + (i + 1) + ":");
 			System.out.println(sortByYear[i].toString());
