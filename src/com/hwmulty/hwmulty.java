@@ -12,8 +12,7 @@ public class hwmulty {
 		} catch (InterruptedException e1) {
 		}
 		System.out.println("Finish " + Thread.currentThread().getName());
-//		myThread.join();
-//		System.out.println(Thread.currentThread().getName());
+
 		}
 
 }
